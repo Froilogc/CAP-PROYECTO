@@ -24,3 +24,14 @@ entity  SalesOrderItem {
     PRICE : Decimal(12,2);
        
 }
+
+
+entity  SalesOrderItems {
+    ID : UUID;
+    NAME : String(40);
+    DESCRIPTION : String(40);
+    RELEASEDATE : Date;
+    DISCOUNTDATE: Date;
+    PRICE : Decimal(12,2);
+       
+}
