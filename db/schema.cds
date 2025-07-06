@@ -44,6 +44,7 @@ entity Status : CodeList {
     C = 'Close';
 
 
-   }
+   };
+   Criticality : Integer;
 }
 
