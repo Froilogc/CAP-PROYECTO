@@ -37,6 +37,7 @@ annotate Service.SalesOrderItem with @(
                 $Type: 'UI.DataField',
                 Value: POS,
                 Label : 'Position',
+                
             },
             {
                 $Type: 'UI.DataField',
