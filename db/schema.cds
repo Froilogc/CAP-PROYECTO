@@ -17,7 +17,7 @@ entity  SalesOrderHeader : cuid, managed{
     DELIVERYDATE: Date;
     orderstatus :  Association to Status;
     imageurl : String;
-    toItems : Association to many SalesOrderItem on toItems.SalesOrder = $self;
+    toItems : Composition of many SalesOrderItem on toItems.SalesOrder = $self;
     
 
     
@@ -31,7 +31,7 @@ entity  SalesOrderItem : cuid  {
     RELEASEDATE : Date;
     DISCOUNTDATE: Date;
     PRICE : Decimal(12,2);
-    CURRENCY : String(2) default 'USD';
+    CURRENCY : String(3) default 'USD';
     SalesOrder : Association to SalesOrderHeader;
        
 }

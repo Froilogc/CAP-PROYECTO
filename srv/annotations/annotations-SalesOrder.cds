@@ -1,6 +1,8 @@
 using {SalesOrder as Service} from '../sr_salesOrder';
 using from './annotations-Items';
 
+annotate  Service.SalesOrderHeader with @odata.draft.enabled;
+
 annotate Service.SalesOrderHeader with {
     FIRSTNAME    @title : 'Name';
     LASTNAME     @title : 'Last Name';

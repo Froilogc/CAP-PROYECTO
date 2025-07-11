@@ -1,4 +1,5 @@
 using {SalesOrder as Service  } from '../sr_salesOrder';
+//annotate  Service.SalesOrderItem with @odata.draft.enabled;
 
 annotate Service.SalesOrderItem WITH {
     DESCRIPTION @title : 'Description';
@@ -37,7 +38,7 @@ annotate Service.SalesOrderItem with @(
                 $Type: 'UI.DataField',
                 Value: POS,
                 Label : 'Position',
-                
+
             },
             {
                 $Type: 'UI.DataField',
